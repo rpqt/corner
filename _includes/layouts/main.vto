@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ title }}</title>
+		<meta name="color-scheme" content="dark light">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/main.css">
+		<meta name="theme-color" content="#0692aa">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="/" id="site-root" class="nav-menu-item">rpqt.fr</a>
+				<ul class="nav-menu">
+					{{ for item of nav.menu().children }}
+						<li>
+							<a href="{{ item.data.url }}" class="nav-menu-item"
+								{{ url.startsWith(item.data.url) ? 'id="header-nav-current"' : '' }}
+							>{{ item.slug }}</a>
+						</li>
+					{{ /for }}
+				</ul>
+			</nav>
+		</header>
+		<main>
+			{{ content }}
+		</main>
+		<footer>
+			<div>© 2025 Romain Paquet</div>
+			<div>Built with <a href="https://lume.land">Lume</a></div>
+			<div>Hosted on <a href="https://srht.site">SourceHut Pages</a></div>
+		</footer>
+	</body>
+</html>
