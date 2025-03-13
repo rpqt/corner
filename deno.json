@@ -6,6 +6,10 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
+    "deploy": {
+      "dependencies": ["build"],
+      "command": "tar -C _site -cvz . > site.tar.gz && hut pages publish -d rpqt.fr site.tar.gz; rm site.tar.gz"
+    }
   },
   "compilerOptions": {
     "types": [
