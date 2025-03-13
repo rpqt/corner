@@ -16,5 +16,6 @@ site.use(googleFonts({
 }));
 
 site.copy("/styles");
+site.copy("favicon.svg")
 
 export default site;
