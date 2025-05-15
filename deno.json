@@ -1,19 +1,32 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.5.1/"
+    "lume/": "https://deno.land/x/lume@v3.0.1/",
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.10/jsx-runtime.ts"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
     "deploy": {
-      "dependencies": ["build"],
+      "dependencies": [
+        "build"
+      ],
       "command": "tar -C _site -cvz . > site.tar.gz && hut pages publish -d rpqt.fr site.tar.gz; rm site.tar.gz"
     }
   },
   "compilerOptions": {
     "types": [
       "lume/types.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "lume"
+  },
+  "unstable": [
+    "temporal"
+  ],
+  "lint": {
+    "plugins": [
+      "https://deno.land/x/lume@v3.0.1/lint.ts"
     ]
   }
 }
