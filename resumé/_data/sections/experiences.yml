@@ -32,12 +32,10 @@ items:
     themes:
       fr:
         - jumeaux numériques
-        - simulation
         - IHM
         - temps réel
       en:
         - digital twins
-        - simulation
         - HUI
         - real-time
     stack:
