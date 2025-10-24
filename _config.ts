@@ -17,7 +17,7 @@ site.use(googleFonts({
 }));
 
 site.copy("/styles");
-site.copy("favicon.svg")
+site.copy("favicon.svg");
 
 site.data("djot", djotRender);
 site.filter("djot", djotRender);
