@@ -26,7 +26,17 @@
                 pkgs.deno
                 pkgs.nil # Nix language server
                 pkgs.nixfmt-rfc-style
+                pkgs.typst
+                pkgs.pandoc
+                pkgs.tinymist
+                pkgs.vscode-css-languageserver
               ];
+
+              FONTCONFIG_FILE = pkgs.makeFontsConf {
+                fontDirectories = [
+                  pkgs.atkinson-hyperlegible-next
+                ];
+              };
             };
           };
       };
