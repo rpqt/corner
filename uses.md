@@ -13,15 +13,15 @@ My handphone runs on [GrapheneOS].
 ### Apps
 
 - **Editor**: helix
-- **Terminal**: alacritty
+- **Terminal**: alacritty, ghostty
 - **Font**: JetBrains Mono
 - **Shell**: zsh
   - **Prompt**: starship
   - **History**: atuin
   - **Other utils**: zoxide, direnv, rg
 - **Web browser**: Firefox, Vanadium
-- **VPN**: Tailscale
-- **DNS**: NextDNS (through tailscale integration)
+- **VPN**: Tailscale, Zerotier
+- **DNS**: Self-hosted [Unbound]
 
 ## Hardware
 
@@ -43,3 +43,4 @@ todo!()
 [GrapheneOS]: https://grapheneos.org
 [Arch Linux]: https://archlinux.org
 [NixOS]: https://nixos.org
+[Unbound]: https://nlnetlabs.nl/projects/unbound/about
