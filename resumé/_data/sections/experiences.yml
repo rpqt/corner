@@ -59,8 +59,8 @@ items:
       end: 09/2022
     description:
       context:
-        fr: Laboratoire de recherche, dans le cadre du dispositif des stages d’excellence de l’Université Grenoble Alpes.
-        en: Research laboratory internship for the “stage d’excellence”  program at Université Grenoble Alpes
+        fr: Laboratoire de recherche, dans le cadre des stages d’excellence de l’Université Grenoble Alpes.
+        en: Research laboratory internship for the “stage d’excellence” program at Université Grenoble Alpes
       tasks:
         fr:
           - Connecter les outils du VERIMAG avec des environnements d’apprentissage par renforcement (OpenAI Gym)
