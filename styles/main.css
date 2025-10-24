@@ -5,7 +5,7 @@
   --color-foreground-dimmed: color-mix(in srgb, var(--color-foreground), transparent 40%);
   /* --color-accent: #0692aa; */
   --max-width: 900px;
-  --font-base-size: 16px;
+  --font-base-size: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +19,8 @@
 }
 
 body {
-  font-family: "JetBrains Mono";
+  /* font-family: "JetBrains Mono"; */
+  font-family: "Atkinson Hyperlegible";
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100svh;
@@ -58,8 +59,7 @@ header>nav {
   text-decoration: underline;
 }
 
-#site-root {
-}
+#site-root {}
 
 #header-nav-current {
   font-weight: bold;
@@ -70,7 +70,9 @@ main {
   width: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0.5em 0;
 }
 
@@ -91,4 +93,25 @@ footer {
   padding: 1em;
   font-size: smaller;
   color: var(--color-foreground-dimmed);
+}
+
+.card {
+  border: 1px solid var(--color-foreground-dimmed);
+  border-radius: 16px;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.card hr {
+  margin: 30px -1em 1em;
+  border: 0;
+  border-top: 1px solid var(--color-foreground-dimmed);
+}
+
+.pl-badge {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 0.5em;
+  margin: 0.25em;
+  display: inline-block;
 }
