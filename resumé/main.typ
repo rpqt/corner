@@ -1,31 +1,26 @@
 #import "localize.typ": localize
 
-#let languages = ("fr", "en")
+#let mkCV(language) = [
 
 #set page(
   paper: "a4",
   columns: 2,
   margin: 10mm,
 )
-
-#languages.map(language => [
-
+  
 #set text(lang: language)
 #let accent-color = rgb(0x06, 0x92, 0xaa, 255)
 
-#let load-section(path) = localize(language, yaml(path))
+#let load(path) = localize(language, yaml(path))
 
-#let education = load-section("_data/sections/education.yml")
-#let experiences = load-section("_data/sections/experiences.yml")
-#let hobbies = load-section("_data/sections/hobbies.yml")
-#let languages = load-section("_data/sections/languages.yml")
-#let skills = load-section("_data/sections/skills.yml")
-#let introduction = load-section("_data/introduction.yml")
-
-#let data = yaml("data.yml")
-#let words = localize(language, yaml("_data/words.yml"))
-
-#let tr(key) = key.split(".").fold(words, (d, k) => d.at(k)).at(language)
+#let education = load("_data/sections/education.yml")
+#let experiences = load("_data/sections/experiences.yml")
+#let hobbies = load("_data/sections/hobbies.yml")
+#let languages = load("_data/sections/languages.yml")
+#let skills = load("_data/sections/skills.yml")
+#let introduction = load("_data/introduction.yml")
+#let contact = yaml("_data/contact.yml")
+#let words = load("_data/words.yml")
 
 #let date-range(date) = [ #date.begin --- #date.end ]
 
@@ -50,7 +45,7 @@
   1 Rue Auguste Renoir \
   38400 Saint-Martin-d'Hères \
   (+33) 06 58 92 15 86 \
-  #for email in data.emails [
+  #for email in contact.emails [
     #link("mailto:" + email) \
   ]
   #link("https://rpqt.fr")
@@ -79,7 +74,7 @@
   scope: "parent",
   [
     #line(length: 100%)
-    #introduction
+    #eval(introduction, mode: "markup")
     #line(length: 100%)
   ]
 )
@@ -130,11 +125,11 @@
 #for hobby in hobbies.items [
   #if hobby.keys().contains("items") [
     *#hobby.name*
-    #hobby.items.map(i => [ - #i]).join()
+    #hobby.items.map(i => [ - #eval(i, mode: "markup")]).join()
   ] else [
-    *#hobby.name* -- #hobby.at("content")
+    *#hobby.name* -- #eval(hobby.at("content"), mode: "markup")
   ]
 
 ]
 
-]).join()
+]
