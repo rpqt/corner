@@ -1,0 +1,15 @@
+themes:
+  fr: Thèmes
+  en: Themes
+stack:
+  fr: Stack
+  en: Stack
+context:
+  fr: Contexte
+  en: Context
+tasks:
+  fr: Tâches
+  en: Tasks
+comment:
+  fr: Appréciation
+  en: Comment

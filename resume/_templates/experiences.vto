@@ -1,0 +1,43 @@
+{{ for exp of section.items }}
+<div class="card">
+	<h3><a href="{{ exp.organisation.website }}">{{ exp.organisation.name }}</a> - {{ exp.position }}</h3>
+
+	<p>{{ exp.date.begin }} - {{ exp.date.end }}, {{ exp.city }}</p>
+
+	<hr>
+
+	<p>
+		<strong>{{ words_.context }}:</strong>
+		{{ exp.description.context }}
+	</p>
+
+	<p>
+		<strong>{{ words_.tasks }}:</strong>
+		<ul>
+			{{ for task of exp.description.tasks }}
+			<li>{{ task }}</li>
+			{{ /for }}
+		</ul>
+	</p>
+
+	<p>
+		<strong>{{ words_.comment }}:</strong>
+		{{ exp.description.comment }}
+	</p>
+
+	<p>
+		<strong>{{ words_.themes }}:</strong>
+		<ul>
+		{{ for theme of exp.themes }}
+			<li>{{ theme }}</li>
+		{{ /for }}
+		</ul>
+	</p>
+
+	<center>
+		{{ for el of exp.stack }}
+			<span class="pl-badge">{{ el }}</span>
+		{{ /for }}
+	</center>
+</div>
+{{ /for }}

@@ -1,0 +1,8 @@
+title:
+  fr: Compétences
+  en: Skills
+priority: 3
+content: |
+  - *C*, *Rust*, *C++*, *Java*, *Python*, *C\#*, Zig, TS, OCaml, Lua
+  - Unix, Shell, Git, GDB, Docker, Nix, React, SQL, QEMU, Terraform, CMake, Gitlab CI, Buildbot, QNX, FreeRTOS, CUDA
+  - RISC-V, ARMv7, AArch64, x86_64

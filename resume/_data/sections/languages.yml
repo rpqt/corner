@@ -1,0 +1,28 @@
+title:
+  fr: Langues
+  en: Languages
+priority: 4
+items:
+  - flag: 🇫🇷
+    name:
+      fr: Français
+      en: French
+  - flag: 🇬🇧
+
+    name:
+      fr: Anglais
+      en: English
+    level: C1
+
+  - flag: 🇩🇪
+    name:
+      fr: Allemand
+      en: German
+    level: B1
+
+  - flag: 🇵🇱
+    name:
+      fr: Polonais
+      en: Polish
+    level: A1
+    _needed: false

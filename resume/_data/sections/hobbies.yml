@@ -1,0 +1,41 @@
+title:
+  fr: Loisirs et centres d'intérêt
+  en: Hobbies
+priority: 5
+items:
+  - name:
+      fr: Programmation
+      en: Programming
+    items:
+      fr:
+        - Définition et implémentation d’un langage de programmation simple en *Rust* (Cranelift)
+        - Reproduction d’un jeu en réseau pair-à-pair avec 2 amis (Bomberman) en *C*
+        - Outil de prise de notes personnel (CLI + LSP) en *Rust*
+# - Création de contenu additionnel pour des jeux (Garry's Mod) en *Lua*
+      en:
+        - Definition and implementation of a simple programing language in *Rust* using Cranelift
+        - Remake of a multiplayer game (Bomberman) with 2 friends in *C*, with peer-to-peer networking
+        - Personal note-taking tool (CLI + LSP) in *Rust*
+# - Development of additional content for games (Garry’s mod) in *Lua*
+
+  - name:
+      fr: Lecture
+      en: Reading
+    content:
+      fr: Blogs, articles et papiers orientés informatique
+      en: Blogs, articles and papers around computer science
+
+  - name: Self hosting
+    content:
+      fr: Hébergement d’outils personnels (git, cloud, médias, backups, CI)
+      en: Hosting and managing tools for my personnal use (git, cloud, storage, backups, CI)
+
+  - name: Hardware
+    content:
+      fr: Programmation sur Arduino -- Soudure et flash de microcontrôleurs RP 2040
+      en: Arduino programming -- Soldering and flash of RP 2040 microcontrollers
+
+  - name: Piano
+    content:
+      fr: Solfège et jeu en auto-apprentissage depuis la fin du lycée
+      en: Learned to play and read solfege mostly by myself

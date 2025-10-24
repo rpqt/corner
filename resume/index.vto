@@ -1,0 +1,19 @@
+---
+title: Romain Paquet - Resumé
+lang: en
+---
+
+{{# <center> #}}
+{{# {{ #}}
+	{{# "Download shorter PDF version in [french](/resume-fr.pdf) or [english](/resume-en.pdf) (one page)" |> md #}}
+{{# }} #}}
+{{# </center> #}}
+
+{{ for name of ["experiences", "education", "skills", "languages", "hobbies"] }}
+{{ set section = translated(sections[name], lang) }}
+<section>
+	<h2 id="#{{name}}">{{ section.title }}</h2>
+	{{ set words_ = translated(words, lang) }}
+	{{ include `./_templates/${name}.vto` { section } }}
+</section>
+{{ /for }}

@@ -1,0 +1,11 @@
+{{ for ed of section.items }}
+<div class="card">
+	<h3>{{ ed.school }}</h3>
+
+	<p>{{ ed.date.begin }} - {{ ed.date.end }}</p>
+
+	<hr>
+
+	{{ ed.description |> djot }}
+</div>
+{{ /for }}

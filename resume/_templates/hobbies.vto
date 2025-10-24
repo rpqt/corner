@@ -1,0 +1,18 @@
+<div>
+{{ for item of section.items }}
+	<div>
+		{{ if "items" in item }}
+			<strong>{{ item.name }}:</strong>
+			<ul>
+			{{ for i of item.items }}
+				<li>{{ i |> djot }}</li>
+			{{ /for }}
+			</ul>
+		{{ else }}
+			<p>
+				<strong>{{ item.name }}:</strong> {{ item.content }}
+			</p>
+		{{ /if }}
+	</div>
+{{ /for }}
+</div>

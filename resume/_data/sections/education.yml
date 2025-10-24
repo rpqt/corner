@@ -1,0 +1,40 @@
+title:
+  fr: Formation
+  en: Education
+priority: 2
+items:
+  - school: Grenoble INP - Ensimag
+    date:
+      begin: 10/2023
+      end: 2026
+    description:
+      fr: |
+        L’Ensimag est une école d’ingénieur en informatique et mathématiques appliquées. J’y ait réalisé des projets de groupe qui m’ont particulièrement intéressé :
+
+        - *Encodeur JPEG (C)*: Projet réalisé uniquement à partir de la spécification, incluant un support pour des niveaux de qualité progressifs – 2 semaines – groupe de 3
+        - *Compilateur Deca (Java)*: Implémentation d’un compilateur et de son infrastructure de test pour un langage objet – 4 semaines – groupe de 5
+        - *Conception d'un système d’exploitation x86 (C)*: réalisation d'un OS (gestion processus, mémoire virtuelle, entrées-sorties, etc) pour x86 (32 bits)
+        - *Conception d’un processeur RISC-V (VHDL)*, avec déploiement sur FPGA
+      en: |
+        Ensimag is an engineering school in applied mathematics and computer science (Master's degree). I've carried out group projects I found particularly interesting:
+
+        - *JPEG Encoder (C)*: Written from scratch using only the specification, including support for progressive levels of detail -- 2 weeks -- team of 3
+        - *Deca Compiler (Java)*: Implementation of a compiler for a Java-like language and its testing infrastructure -- 4 weeks -- team of 5
+        - *OS Conception (C)*: Writting an operating system for x86 (32 bits) with its components (process management, virtual memory, IO, etc)
+        - *RISC-V Processor (VHDL)*: Implementation and testing of instructions, with deployment on FPGA
+      
+  - school: PeiP Polytech Grenoble
+    date:
+      begin: 09/2021
+      end: 06/2023
+    description:
+      fr: |
+        *Prépa intégrée sur 2 ans* alliant des enseignements de Licence de l’Université Grenoble Alpes (mathématiques et informatique) à des modules pour l’ingénieur
+# - Modélisation et résolution d’un jeu de logique à grilles (Skyscrapers) (*Python 3*, *SAT*)
+# - Modélisation des dames chinoises (*OCaml*)
+# - Participation à une réflexion autour de la gestion des déchets en ville : “Objectif zéro déchets à Saint-Bruno” (3 jours)
+      en: |
+        *Two years integrated prep school* including teachings of license at Université Grenoble Alpes (computer science and mathematics) with additional engineering modules
+# - BlackJack implementation in CLI with automated players (*Python 3*, *SAT*)
+# - Chinese checkers modelization (*OCaml*)
+# - Participation in a 3 days reflexion around trash and unauthorized dumplings with city representatives
