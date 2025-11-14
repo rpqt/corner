@@ -1,0 +1,17 @@
+# Projects
+
+## [Lila](./lila.dj)
+
+A simple programming language. It uses [Cranelift][] as a compiler backend.
+
+## Myrtle
+
+A note-taking helper similar to [zk][].
+
+## Statice
+
+A static site generator supporting [Djot][].
+
+[Cranelift]: https://cranelift.dev
+[Djot]: https://djot.net
+[zk]: https://zk-org.github.io/zk

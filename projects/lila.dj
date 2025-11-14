@@ -1,0 +1,42 @@
+# Lila
+
+A simple programming language I make in my free time.
+I'm trying to make it modular so I can easily try and compare different backends and tooling.
+
+## Status
+
+For now it can JIT-compile basic programs using [Cranelift][].
+
+I'm still not decided on which language features I want to explore.
+
+## Source mirrors
+
+- [GitHub](https://github.com/rpqt/lila)
+- [Gitea](https://git.turifer.dev/rpqt/lila)
+- [SourceHut](https://git.sr.ht/~rpqt/lila)
+
+## Roadmap
+
+### Parsing
+
+- [x] Pest parser backend
+- [ ] (wip) [Tree-sitter][] parser backend
+
+  - [ ] (wip) Tree-sitter grammar -- [git][tree-sitter-lila]
+  - [ ] (wip) Parser based on the tree-sitter grammar
+
+### Static analysis
+
+- [x] Basic type checking
+
+### Codegen
+
+- [x] (wip) Cranelift JIT compiler
+- [x] Basic CLI
+- [ ] Run the compiler on Wasm
+- [ ] Wasm codegen
+- [ ] REPL
+
+[Cranelift]: https://cranelift.dev
+[Tree-sitter]: https://tree-sitter.github.io/tree-sitter
+[tree-sitter-lila]: https://git.sr.ht/~rpqt/tree-sitter-lila

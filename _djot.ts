@@ -14,7 +14,7 @@ export function djotRender(content: string): string {
   return djot.renderHTML(djot.parse(content));
 }
 
-export default async function djotLoader(path: string | URL) {
+export async function djotLoader(path: string | URL) {
   const content = await Deno.readTextFile(path);
 
   const ast = djot.parse(content);
