@@ -2,12 +2,18 @@ import lume from "lume/mod.ts";
 import nav from "lume/plugins/nav.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import googleFonts from "lume/plugins/google_fonts.ts";
-import { djotLoader, djotRender } from "./_djot.ts";
+import djotPlugin from "./_djot.ts";
+import djot from "@djot/djot";
 
 const site = lume();
 
 site.use(nav());
 site.use(codeHighlight());
+
+site.use(djotPlugin({
+  renderOptions: {
+  },
+}));
 
 site.use(googleFonts({
   cssFile: "/styles/main.css",
@@ -20,9 +26,5 @@ site.use(googleFonts({
 
 site.copy("/styles");
 site.copy("favicon.svg");
-
-site.data("djot", djotRender);
-site.filter("djot", djotRender);
-site.loadPages([".dj"], djotLoader);
 
 export default site;
