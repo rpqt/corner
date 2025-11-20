@@ -5,7 +5,7 @@
   --color-foreground-dimmed: color-mix(in srgb, var(--color-foreground), transparent 40%);
   /* --color-accent: #0692aa; */
   --max-width: 900px;
-  --font-base-size: 20px;
+  --font-base-size: 1.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +19,7 @@
 }
 
 body {
-  /* font-family: "JetBrains Mono"; */
-  font-family: "Atkinson Hyperlegible";
+  font-family: "Atkinson Hyperlegible Next";
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100svh;
