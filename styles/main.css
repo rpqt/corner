@@ -95,9 +95,39 @@ footer {
 }
 
 .pl-badge {
-  border: 1px solid;
+  --color: var(--color-foreground);
   border-radius: 8px;
-  padding: 0.5em;
-  margin: 0.25em;
+  padding: 0em 0.5em;
+  margin: 0em;
   display: inline-block;
+  font-size: 0.9em;
+  background: color-mix(in srgb, var(--color), transparent 60%);
+  color: var(--color);
+}
+
+.pl-python3 {
+  --color: goldenrod;
+  background: color-mix(in srgb, gold, transparent 60%);
+}
+
+.pl-cpp {
+  --color: blue;
+}
+
+.pl-csharp {
+  --color: purple;
+}
+
+.pl-rust {
+  --color: orangered;
+}
+
+/* An icon to be displayed within text, at the same size as the text */
+.text-icon {
+  height: 1em;
+  width: 1em;
+  display: inline;
+  fill: var(--color-foreground);
+  position: relative;
+  top: .125em;
 }

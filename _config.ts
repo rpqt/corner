@@ -7,6 +7,19 @@ import djot from "@djot/djot";
 
 const site = lume();
 
+site.filter("lowercasePL", (lang: string) => {
+  switch (lang) {
+    case "C++":
+      return "cpp";
+    case "C#":
+      return "csharp";
+    case "Python 3":
+      return "python3";
+    default:
+      return lang.toLowerCase();
+  }
+});
+
 site.use(nav());
 site.use(codeHighlight());
 
