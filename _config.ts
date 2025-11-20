@@ -25,6 +25,15 @@ site.use(codeHighlight());
 
 site.use(djotPlugin({
   renderOptions: {
+    overrides: {
+      symb: (symbol: djot.Symb, renderer: djot.HTMLRenderer) => {
+        if (symbol.alias.startsWith("si-")) {
+          const iconName = symbol.alias.substring(3);
+          return `<img class="text-icon" src="/icons/${iconName}.svg">`;
+        }
+        return renderer.renderAstNodeDefault(symbol);
+      },
+    },
   },
 }));
 
@@ -40,5 +49,6 @@ site.use(googleFonts({
 
 site.copy("/styles");
 site.copy("favicon.svg");
+site.copy("/icons")
 
 export default site;
