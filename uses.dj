@@ -6,22 +6,22 @@ There are [lots of pages](https://uses.tech) like this one showing developer set
 
 ### OS
 
-I've used different Linux systems on my machines, mostly [Arch Linux] on my laptop.
+I've used different Linux systems on my machines, mostly [Arch Linux][] on my laptop.
 I recently joined the [_NixOS cult_ ❄️][NixOS], maybe you should too 👀.
-My handphone runs on [GrapheneOS].
+My handphone runs on [GrapheneOS][].
 
 ### Apps
 
-- **Editor**: helix
-- **Terminal**: alacritty, ghostty
-- **Font**: JetBrains Mono
-- **Shell**: zsh
-  - **Prompt**: starship
-  - **History**: atuin
-  - **Other utils**: zoxide, direnv, rg
-- **Web browser**: Firefox, Vanadium
-- **VPN**: Tailscale, Zerotier
-- **DNS**: Self-hosted [Unbound]
+- *Editor*: helix
+- *Terminal*: alacritty, ghostty
+- *Font*: JetBrains Mono
+- *Shell*: zsh
+- *Prompt*: starship
+- *Shell history*: atuin
+- *Other utils*: zoxide, direnv, rg
+- *Web browser*: Firefox, Vanadium
+- *VPN*: Tailscale, Zerotier
+- *DNS*: Self-hosted [Unbound][]
 
 ## Hardware
 
@@ -33,7 +33,7 @@ My handphone is a Pixel 7a.
 
 ### Keyboard
 
-I built a split mechanical keyboard, the (Ferris) [Sweep] LP, which I only use at home.
+I built a split mechanical keyboard, the (Ferris) [Sweep][] LP, which I only use at home.
 
 ### Audio
 
