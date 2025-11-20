@@ -15,11 +15,11 @@
 			<nav>
 				<a href="/" id="site-root" class="nav-menu-item">rpqt.fr</a>
 				<ul class="nav-menu">
-					{{ for item of nav.menu().children }}
+					{{ for item of ["now", "projects", "socials"] }}
 						<li>
-							<a href="{{ item.data.url }}" class="nav-menu-item"
-								{{ url.startsWith(item.data.url) ? 'id="header-nav-current"' : '' }}
-							>{{ item.slug }}</a>
+							<a href="/{{ item }}" class="nav-menu-item"
+								{{ url.startsWith("/" + item) ? 'id="header-nav-current"' : '' }}
+							>{{ item }}</a>
 						</li>
 					{{ /for }}
 				</ul>
