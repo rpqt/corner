@@ -58,8 +58,6 @@ header>nav {
   text-decoration: underline;
 }
 
-#site-root {}
-
 #header-nav-current {
   font-weight: bold;
 }
@@ -74,17 +72,6 @@ h2,
 h3 {
   margin: 0.5em 0;
 }
-
-/*
-h1::before { content: "#"; }
-h2::before { content: "##"; }
-h3::before { content: "###"; }
-
-h1::before, h2::before, h3::before {
-  font-variant-ligatures: none;
-  margin-right: 0.3em;
-}
-*/
 
 footer {
   width: 100%;
